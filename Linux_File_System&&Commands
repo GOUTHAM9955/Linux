@@ -1,0 +1,41 @@
+Linux File System
+
+>> In Linux everything is treated as a file system. These are of 3 types
+    1) Directory file/ folder, it starts with d
+    2) Normal file , starts with -
+    3) Link file, starts with l
+
+
+$ clear  --> To clear the screen
+
+$ mkdir <folder-name>  --> create a folder/directory 
+
+$ cd <folder-name>  --> changing our current directory 
+
+$ pwd  --> to check my current folder/directory
+
+$ cd ..  --> to come out of directory/folder
+
+$ rmdir <directory-name>  --> to delete directory which is empty
+
+
+$ rm -rf <directory-name>   --> To delete a directory/folder which has files in it
+
+$ ls --> display files present in current working directory
+
+$ ls -l --> display files present in current working directory in alphabetical order (a-z) one below the other
+
+$ ls -lr --> display files present in current working directory in reverse alphabetical order(z-a) one below the other
+
+$ ls -lt  --> display files present in current working directory with latest file on top 
+
+$ ls -ltr ---> display files present in current working directory with old file on top
+
+
+--------------------------------------------------------
+
+$ rm <file-name> --> Delete file 
+
+$ rm *.txt  --> delete every file of current directory with txt as extension
+
+$ rm a*.txt  --> delete all txt files which starts with a
