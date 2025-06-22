@@ -32,10 +32,86 @@ $ ls -lt  --> display files present in current working directory with latest fil
 $ ls -ltr ---> display files present in current working directory with old file on top
 
 
---------------------------------------------------------
+
+==============================================================================================
 
 $ rm <file-name> --> Delete file 
 
 $ rm *.txt  --> delete every file of current directory with txt as extension
 
 $ rm a*.txt  --> delete all txt files which starts with a
+
+mv : To Move and To Rename 
+
+$ mv <current-location> <new-location>  --> changing location
+
+$ mv <current-name <new-name> --> renaming the file
+
+
+==============================================================================================
+$ cat <file-name> 
+$ cat aws.txt ---> It will display data/content of that file
+
+$ cat > telusko.txt ----> It will create a file and allow us to add data/content ( use cntl+D to come out of edit mode)
+
+$ cat >> <file-name>
+$ cat >> f1.txt --> append data/content in existing file
+
+$ cat -n f1.txt ---> Display data with numbering
+
+$ tac file.txt ---> display/print the content from bottom to top 
+
+$ rev file.txt --> reverse each line and each word of that line
+
+==============================================================================================
+
+Copy Data : cp
+
+==============================================================================================
+$ cp alien.txt telusko.txt --> alien file data will be added in telusko file ( If there is content/data in telusko thn that will be replaced by new content coming from alien.txt file)
+
+Copy multiple files data into another file
+
+==============================================================================================
+cat alien.txt aws.txt > f2.txt    ---> content of alien and aws file will be added into f2 file
+
+$ head f1.txt
+$ tail f1.txt    
+
+ Both will print content of files like cat
+
+$ head -n 5 f1.txt ---> prints / displays first 5 lines of that file 
+
+$ head -n 10.txt ---> prints / displays first 10 lines of that file 
+
+$ tail -n 5 f1.txt ---> prints / display last 5 lines of the file 
+
+==============================================================================================
+ history --> command will display all commands which we have used in a particular VM
+
+==============================================================================================
+
+grep
+
+grep stands for Global Regular Expression Print
+
+It's a command-line utility in Linux used to search for patterns in text using regular expression. It prints the matching lines
+
+
+$ grep 'aws' f1.txt  --> It will print the lines which has aws by considering case sensitivity
+
+$ grep -i 'aws' f1.txt  --> It will print the lines which has aws by ignoring case sensitivity
+
+$ grep -n 'AWS' f1.txt --> It will print the lines which has aws along side line number
+
+$ grep -v 'AWS' f1.txt --> It will print the lines which does not has aws in it
+
+$ grep -i 'AWS' *  --> search for aws keyword in all files of pwd
+
+Count the number of matches
+
+$ grep -c "Exception" error.log --> Outputs how many lines contain "Exception" in error.log.
+
+$ grep -w "fail" results.txt --> Matches only the word fail, not failed or failing.
+
+==============================================================================================
